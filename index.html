@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="/css/index.css">
+    <script type="text/javascript" src="/js/index.js"></script>
+    <title>Mini-Project</title>
+</head>
+<body>
+    
+    <h1 class="title">Welcome to Katik</h1>
+    <div class="deskripsi">
+        <p>Sobat , Selamat datang di Katik:)</p>
+        <p>Sebuah web apps sederhana yang berfungsi untuk menghitung nilai luas dan keliling bangun datar</p>
+    </div>
+    
+    <!-- Header -->
+    <header>
+        <nav>
+            <div class="menu">
+                <a href="index.html" class="menu-triangle">Segitiga</a >
+                <a href="jajargenjang.html">Jajargenjang</a >
+            </div>
+        </nav>
+    </header>
+
+    <!-- main -->
+    <main>
+        <section id="triangle">
+            <div class="main-triangle">
+                <h2>Luas Segitiga</h2>
+            </div>
+            <div class="card">
+                <div class="gambar">
+                    <img src="./assets/triangle.PNG" alt="triangle">
+                </div>
+                <div>
+                    <p>Rumus Luas</p>
+                    <p class="rumus">L = 1/2 x T x A</p>
+                </div>
+                <div class="keterangan">
+                    <p>Di mana:</p>
+                    <p>L = Luas </p>
+                    <p>a = Panjang Alas</p>
+                    <p>t = Tinggi</p>
+                </div>
+                <hr>
+                <div class="form-hitung">
+                    <div class="text-hitung">
+                        <h1>Hitung Luas Segitiga</h1>
+                    </div>
+                    <form action="#" class="form-triangle" target="_parent" onsubmit="luas_triangle(event)">
+                        <input 
+                        type="number" 
+                        id="number1" 
+                        placeholder="Nilai Alas"
+                        pattern="[0-9]+"
+                        required>
+                        <input 
+                        type="number" 
+                        id="number2" 
+                        placeholder="Nilai Tinggi"
+                        pattern="[0-9]+" 
+                        required>
+                        <div class="result">
+                            <p id="result-rumus">L = 1/2 x a x t</p>
+                            <p id="result-isi">L = 1/2 x Nilai Alas x Nilai Tinggi</p>
+                            <p id="result-luas">L = 1/2 x a x t</p>
+                        </div>
+                        <button type="submit" class="button-triangle" onclick="">Hitung</button>
+                        <button type="reset" class="button-reset">Reset</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <main>
+        <section id="triangle">
+            <div class="main-triangle">
+                <h2>Keliling Segitiga</h2>
+            </div>
+            <div class="card">
+                <div class="gambar">
+                    <img src="./assets/triangle.PNG" alt="triangle">
+                </div>
+                <div>
+                    <p>Rumus Keliling</p>
+                    <p class="rumus">L = S1 + S2 + S3</p>
+                </div>
+                <div class="keterangan">
+                    <p>Di mana:</p>
+                    <p>S1 = Sisi A </p>
+                    <p>S2 = Sisi B </p>
+                    <p>S3 = Sisi C</p>
+                </div>
+                <hr>
+                <div class="form-hitung">
+                    <div class="text-hitung">
+                        <h1>Hitung Keliling Segitiga</h1>
+                    </div>
+                    <form action="#" class="form-triangle" target="_parent" onsubmit="keliling_triangle(event)">
+                        <input type="number" id="S1" placeholder="Nilai Sisi A" pattern="[0-9]+" required>
+                        <input type="number" id="S2" placeholder="Nilai Sisi B" pattern="[0-9]+" required>
+                        <input type="number" id="S3" placeholder="Nilai Sisi C" pattern="[0-9]+" required>
+                        <div class="result">
+                            <p id="result-rumus">K = S1 + S2 + S3 </p>
+                            <p id="result-isi-kel">K = S1 + S2 + S3 </p>
+                            <p id="result-kel">K = S1 + S2 + S3 </p>
+                        </div>
+                        <button type="submit" class="button-triangle" onclick="">Hitung</button>
+                        <button type="reset" class="button-reset">Reset</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+    <!-- footer -->
+    <footer> Copyright 2023 Eka Arlan Febriyanto</footer>
+</body>
+</html>

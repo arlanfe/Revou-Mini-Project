@@ -1,0 +1,107 @@
+/* reset css */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+/* body */
+body {
+    padding: 0 10px;
+}
+/* title */
+.title {
+    margin-top: 20px;
+    text-align: center;
+}
+.deskripsi {
+    margin: 10px 0px;
+    text-align: center;
+}
+/* header */
+.menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.menu > a {
+    text-decoration: none;
+    padding: 10px;
+}
+.menu-triangle {
+    padding: 10px 0;
+    background-color: blue;
+    color: white;
+    width: 100%;
+    text-align: center;
+}
+/* main */
+.card {
+    padding: 20px;
+    border: 1px blue solid;
+    box-shadow: 0px 5px 5px rgba(0,0,0,0.3);
+}
+.rumus {
+    text-align: center;
+    font-weight: bold;
+    padding: 5px;
+}
+.result {
+    display: block;
+    margin-right: auto;
+}
+.gambar {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.keterangan{
+    padding: 5px 0;
+}
+.text-hitung {
+    padding-top: 10px;
+    padding-bottom: 5px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.main-triangle {
+    padding: 15px;
+    background-color: blue;
+    color: white;
+    width: 100%;
+    text-align: center;
+    border-radius: 0px;
+}
+.form-triangle {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: center;
+}
+.form-triangle > input {
+    border-radius: 4px;
+    padding: 5px;
+    width: 100%;
+}
+.button-triangle {
+    background-color: blue;
+    color: white;
+    border: none;
+    padding: 6px 8px;
+    border-radius: 4px;
+}
+.button-reset {
+    display: block;
+    margin-left: auto;
+    background-color: orange;
+    color: white;
+    border: none;
+    padding: 6px 8px;
+    border-radius: 4px;
+}
+/* footer */
+footer {
+    padding: 20px;
+    text-align: center;
+}
